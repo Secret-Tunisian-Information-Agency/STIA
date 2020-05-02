@@ -89,16 +89,16 @@ read -p "InG@STIA~$ " Menu1
    nmap
   fi
   if [ "$Menu1" == "2" ]; then
-   cd Th3inspector && perl Th3inspector.pl
+   cd Th3inspector && chmod +x install.sh && ./install.sh && perl Th3inspector.pl
   fi
   if [ "$Menu1" == "3" ]; then
-   cd setoolkit && setoolkit
+   cd social-engineer-toolkit && python setup.py && setoolkit
   fi
   if [ "$Menu1" == "4" ]; then
    sparta
   fi
   if [ "$Menu1" == "5" ]; then
-   cd sherlock && python3 sherlock.py
+   cd sherlock &&  python3 -m pip install -r requirements.txt && python3 sherlock.py
   fi
 fi
 
@@ -143,8 +143,7 @@ read -p "pwd@STIA~$ " Menu3
  cd ncrack && ncrack
  fi
  if [ "$Menu3" == "3" ]; then
- cd thc-hydra && ./hydra -h
+ cd thc-hydra && ./configure && make && make install && ./hydra -h 
  fi
 fi
-
 
