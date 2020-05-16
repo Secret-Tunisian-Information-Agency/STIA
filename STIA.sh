@@ -23,127 +23,445 @@ LIGHTCYAN='\033[1;36m'
 WHITE='\033[1;37m'
 
 # ----------------------------------
-# Banner
-# ----------------------------------
-clear
-echo -e "${LIGHTGREEN} ******************************************************************************"  
-echo -e "${GREY} ******************************************************************************"  
-echo -e "${YELLOW} ************************************* ${RED}STIA ${YELLOW}***********************************"
-echo -e "${YELLOW} *******************${PURPLE} BE LIKE THE PARROT GET DIFFERENT COLOR ${YELLOW}*******************"
-echo -e "${GREY} ******************************************************************************" 
-echo -e "${BLUE} ******************************************************************************"  
-
-
-# ----------------------------------
 # SCRIPT
 # ----------------------------------
-echo ""
-echo ""
-echo  -e "                      ${LIGHTGREEN}author:${GREY} cybereagle2001        "
-echo  -e "                   ${LIGHTGREEN}e-mail: ${GREY}cybereagle592@gmail.com  "
-echo -e "                     ${LIGHTGREEN} project: ${GREY}STIA script          "
-echo -e "                            ${RED}  V 0.00          ${NOCOLOR}      "
-echo ""
-echo ""
-echo " Select from the menu: "
-echo ""
-echo "  [1] Information Gathering "
-echo "  [2] encryption/decryption "
-echo "  [3] Password Attacks      "
-echo ""
-echo -e "  [00] LOGOUT ${ORANGE}"
-echo ""
-echo ""
 
-read -p "STIA~$ " Menu
+# ----------------------------------
+# Information_Gathering
+# ----------------------------------
+Information_Gathering() {
+nmap() {
+  nmap
+}
+
+Th3inspector() {
+  cd /root/STIA/Th3inspector && chmod +x install.sh && ./install.sh && perl Th3inspector.pl
+}
+
+setoolkit() {
+  cd /root/STIA/social-engineer-toolkit && python setup.py && ./setoolkit
+}
+
+sparta() {
+  sparta
+}
+
+Sherlock() {
+  cd /root/STIA/sherlock &&  python3 -m pip install -r requirements.txt && python3 sherlock.py
+}
+
+goto() {
+Information_Gathering() {
+nmap() {
+  cd && nmap
+}
+
+Th3inspector() {
+  cd /root/STIA/Th3inspector && chmod +x install.sh && ./install.sh && perl Th3inspector.pl
+}
+
+setoolkit() {
+  cd /root/STIA/social-engineer-toolkit && python setup.py && ./setoolkit
+}
+
+sparta() {
+  cd && sparta
+}
+
+Sherlock() {
+  cd && cd /root/STIA/sherlock/sherlock &&  python3 -m pip install -r requirements.txt && cd /root/STIA/sherlock/sherlock && clear && python3 sherlock.py
+}
+
+goto() {
+until [ "$Menu" = "00" ]; do
+  clear
+  echo -e "${LIGHTGREEN} ******************************************************************************"  
+  echo -e "${GREY} ******************************************************************************"  
+  echo -e "${YELLOW} ************************************* ${RED}STIA ${YELLOW}***********************************"
+  echo -e "${YELLOW} *******************${PURPLE} BE LIKE THE PARROT GET DIFFERENT COLOR ${YELLOW}*******************"
+  echo -e "${GREY} ******************************************************************************" 
+  echo -e "${BLUE} ******************************************************************************"  
+  echo ""
+  echo ""
+  echo  -e "                      ${LIGHTGREEN}author:${GREY} cybereagle2001        "
+  echo  -e "                   ${LIGHTGREEN}e-mail: ${GREY}cybereagle592@gmail.com  "
+  echo -e "                     ${LIGHTGREEN} project: ${GREY}STIA script          "
+  echo -e "                            ${RED}  V 0.00          ${NOCOLOR}      "
+  echo ""
+  echo ""
+  echo " Select from the menu: "
+  echo ""
+  echo "  [1] Information Gathering "
+  echo "  [2] encryption/decryption "
+  echo "  [3] Password Attacks      "
+  echo ""
+  echo -e "  [00] LOGOUT ${ORANGE}"
+  echo ""
+  echo ""
+
+  read -p "STIA~$ " Menu
+  case $Menu in
+    1 ) clear ; Information_Gathering ; press_enter ;; 
+    2 ) clear ; encryption_decryption ; press_enter ;;
+    3 ) clear ; Password_Attacks ; press_enter ;;
+    00 ) clear ; out ;;
+    * ) clear ; incorrect_selection ; press_enter ;;
+  esac
+done
+}
+
+press_enter() {
+  echo ""
+  echo -n "	Press Enter to continue "
+  read
+  clear
+}
+
+incorrect_selection() {
+  echo "Sorry you are lost! Never give up try again!"
+}
+
+until [ "$Menu1" = "00" ]; do
+  clear
+  figlet "                         InG"
+  echo ""
+  echo -e " ${CYAN} Choose your tool: "
+  echo ""
+  echo    "   1* nmap"
+  echo    "   2* Th3inspector      "
+  echo    "   3* setoolkit"
+  echo    "   4* sparta"
+  echo    "   5* Sherlock"
+  echo ""
+  echo  -e  "   00* go back" ${LIGHTBLUE}
+  echo ""
+  echo ""
+  read -p "InG@STIA~$ " Menu1
+  echo ""
+  case $Menu1 in
+    1 ) clear ; nmap ; press_enter ;;
+    2 ) clear ; Th3inspector ; press_enter ;;
+    3 ) clear ; setoolkit ; press_enter ;;
+    4 ) clear ; sparta ; press_enter ;;
+    5 ) clear ; Sherlock ; press_enter ;;
+    00 ) clear ; goto ;;
+    * ) clear ; incorrect_selection ; press_enter ;;
+  esac
+done
+}
+
+encryption_decryption() {
+  
+crypto() {
+  cd Crypto && cd Crypto_app && chmod +x install.sh && ./install.sh
+}
+
+press_enter() {
+  echo ""
+  echo -n "	Press Enter to continue "
+  read
+  clear
+}
+
+goto() {
+until [ "$Menu" = "00" ]; do
+  clear
+  echo -e "${LIGHTGREEN} ******************************************************************************"  
+  echo -e "${GREY} ******************************************************************************"  
+  echo -e "${YELLOW} ************************************* ${RED}STIA ${YELLOW}***********************************"
+  echo -e "${YELLOW} *******************${PURPLE} BE LIKE THE PARROT GET DIFFERENT COLOR ${YELLOW}*******************"
+  echo -e "${GREY} ******************************************************************************" 
+  echo -e "${BLUE} ******************************************************************************"  
+  echo ""
+  echo ""
+  echo  -e "                      ${LIGHTGREEN}author:${GREY} cybereagle2001        "
+  echo  -e "                   ${LIGHTGREEN}e-mail: ${GREY}cybereagle592@gmail.com  "
+  echo -e "                     ${LIGHTGREEN} project: ${GREY}STIA script          "
+  echo -e "                            ${RED}  V 0.00          ${NOCOLOR}      "
+  echo ""
+  echo ""
+  echo " Select from the menu: "
+  echo ""
+  echo "  [1] Information Gathering "
+  echo "  [2] encryption/decryption "
+  echo "  [3] Password Attacks      "
+  echo ""
+  echo -e "  [00] LOGOUT ${ORANGE}"
+  echo ""
+  echo ""
+
+  read -p "STIA~$ " Menu
+  case $Menu in
+    1 ) clear ; Information_Gathering ; press_enter ;; 
+    2 ) clear ; encryption_decryption ; press_enter ;;
+    3 ) clear ; Password_Attacks ; press_enter ;;
+    00 ) clear ; out ;;
+    * ) clear ; incorrect_selection ; press_enter ;;
+  esac
+done
+}
+
+incorrect_selection() {
+  echo "You are lost ! never give up try again."
+}
+
+until [ "$Menu2" = "00" ]; do
+ clear
+ figlet "ENC/DEC"
+ echo -e " ${LIGHTPURPLE} Choose your tool: "
+ echo ""
+ echo    "   1* Crypto"
+ echo ""
+ echo  -e  "   00* go back" ${WHITE}
+ echo ""
+ echo ""
+ read -p "ENC/DEC@STIA~$ " Menu2
+   echo ""
+   case $Menu2 in
+      1 ) clear ; crypto ; press_enter ;;
+     00 ) clear ; goto ;;
+     * ) clear ; incorrect_selection ; press_enter ;;
+   esac
+done
+}
+
+press_enter() {
+  echo ""
+  echo -n "	Press Enter to continue "
+  read
+  out
+  clear
+}
+
+Password_Attacks() {
+ echo "pass"
+}
+
+
+out () {
+echo -e "${NOCOLOR}Thanks for useing ${RED} STIA script ${NOCOLOR}. If you got any prooblems please send us an e-mail on ${GREEN} cybereagle592@gmail.com ${NOCOLOR}, or on github ${YELLOW} https://github.com/Secret-Tunisian-Information-Agency ."
+cd
+}
+
+incorrect_selection() {
+  echo "Incorrect selection! Try again."
+}
+
+until [ "$Menu" = "00" ]; do
+  clear
+  echo -e "${LIGHTGREEN} ******************************************************************************"  
+  echo -e "${GREY} ******************************************************************************"  
+  echo -e "${YELLOW} ************************************* ${RED}STIA ${YELLOW}***********************************"
+  echo -e "${YELLOW} *******************${PURPLE} BE LIKE THE PARROT GET DIFFERENT COLOR ${YELLOW}*******************"
+  echo -e "${GREY} ******************************************************************************" 
+  echo -e "${BLUE} ******************************************************************************"  
+  echo ""
+  echo ""
+  echo  -e "                      ${LIGHTGREEN}author:${GREY} cybereagle2001        "
+  echo  -e "                   ${LIGHTGREEN}e-mail: ${GREY}cybereagle592@gmail.com  "
+  echo -e "                     ${LIGHTGREEN} project: ${GREY}STIA script          "
+  echo -e "                            ${RED}  V 0.00          ${NOCOLOR}      "
+  echo ""
+  echo ""
+  echo " Select from the menu: "
+  echo ""
+  echo "  [1] Information Gathering "
+  echo "  [2] encryption/decryption "
+  echo "  [3] Password Attacks      "
+  echo ""
+  echo -e "  [00] LOGOUT ${ORANGE}"
+  echo ""
+  echo ""
+
+  read -p "STIA~$ " Menu
+  case $Menu in
+    1 ) clear ; Information_Gathering ; press_enter ;; 
+    2 ) clear ; encryption_decryption ; press_enter ;;
+    3 ) clear ; Password_Attacks ; press_enter ;;
+    00 ) clear ; out ;;
+    * ) clear ; incorrect_selection ; press_enter ;;
+  esac
+done
+}
+
+press_enter() {
+  echo ""
+  echo -n "	Press Enter to continue "
+  read
+  clear
+}
+
+incorrect_selection() {
+  echo "Sorry you are lost! Never give up try again!"
+}
+
+until [ "$Menu1" = "00" ]; do
+  clear
+  figlet "                         InG"
+  echo ""
+  echo -e " ${CYAN} Choose your tool: "
+  echo ""
+  echo    "   1* nmap"
+  echo    "   2* Th3inspector      "
+  echo    "   3* setoolkit"
+  echo    "   4* sparta"
+  echo    "   5* Sherlock"
+  echo ""
+  echo  -e  "   00* go back" ${LIGHTBLUE}
+  echo ""
+  echo ""
+  read -p "InG@STIA~$ " Menu1
+  echo ""
+  case $Menu1 in
+    1 ) clear ; nmap ; press_enter ;;
+    2 ) clear ; Th3inspector ; press_enter ;;
+    3 ) clear ; setoolkit ; press_enter ;;
+    4 ) clear ; sparta ; press_enter ;;
+    5 ) clear ; Sherlock ; press_enter ;;
+    00 ) clear ; goto ;;
+    * ) clear ; incorrect_selection ; press_enter ;;
+  esac
+done
+}
+
+
+# --------------------------------
+#  encryption_decryption
+# --------------------------------
+encryption_decryption() {
+  crypto() {
+  cd Crypto && cd Crypto_app && chmod +x install.sh && ./install.sh
+}
+
+press_enter() {
+  echo ""
+  echo -n "	Press Enter to continue "
+  read
+  clear
+}
+
+goto() {
+until [ "$Menu" = "00" ]; do
+  clear
+  echo -e "${LIGHTGREEN} ******************************************************************************"  
+  echo -e "${GREY} ******************************************************************************"  
+  echo -e "${YELLOW} ************************************* ${RED}STIA ${YELLOW}***********************************"
+  echo -e "${YELLOW} *******************${PURPLE} BE LIKE THE PARROT GET DIFFERENT COLOR ${YELLOW}*******************"
+  echo -e "${GREY} ******************************************************************************" 
+  echo -e "${BLUE} ******************************************************************************"  
+  echo ""
+  echo ""
+  echo  -e "                      ${LIGHTGREEN}author:${GREY} cybereagle2001        "
+  echo  -e "                   ${LIGHTGREEN}e-mail: ${GREY}cybereagle592@gmail.com  "
+  echo -e "                     ${LIGHTGREEN} project: ${GREY}STIA script          "
+  echo -e "                            ${RED}  V 0.00          ${NOCOLOR}      "
+  echo ""
+  echo ""
+  echo " Select from the menu: "
+  echo ""
+  echo "  [1] Information Gathering "
+  echo "  [2] encryption/decryption "
+  echo "  [3] Password Attacks      "
+  echo ""
+  echo -e "  [00] LOGOUT ${ORANGE}"
+  echo ""
+  echo ""
+
+  read -p "STIA~$ " Menu
+  case $Menu in
+    1 ) clear ; Information_Gathering ; press_enter ;; 
+    2 ) clear ; encryption_decryption ; press_enter ;;
+    3 ) clear ; Password_Attacks ; press_enter ;;
+    00 ) clear ; out ;;
+    * ) clear ; incorrect_selection ; press_enter ;;
+  esac
+done
+}
+
+incorrect_selection() {
+  echo "You are lost ! never give up try again."
+}
+
+until [ "$Menu2" = "00" ]; do
+ clear
+ figlet "ENC/DEC"
+ echo -e " ${LIGHTPURPLE} Choose your tool: "
+ echo ""
+ echo    "   1* Crypto"
+ echo ""
+ echo  -e  "   00* go back" ${WHITE}
+ echo ""
+ echo ""
+ read -p "ENC/DEC@STIA~$ " Menu2
+   echo ""
+   case $Menu2 in
+      1 ) clear ; crypto ; press_enter ;;
+     00 ) clear ; goto ;;
+     * ) clear ; incorrect_selection ; press_enter ;;
+   esac
+done
+}
+
+press_enter() {
+  echo ""
+  echo -n "	Press Enter to continue "
+  read
+  out
+  clear
+}
+
+Password_Attacks() {
+ echo "pass"
+}
 
 # ---------------------------------
 # LOGOUT
 # ---------------------------------
 
-if [ "$Menu" == "00" ]; then
+out () {
 echo -e "${NOCOLOR}Thanks for useing ${RED} STIA script ${NOCOLOR}. If you got any prooblems please send us an e-mail on ${GREEN} cybereagle592@gmail.com ${NOCOLOR}, or on github ${YELLOW} https://github.com/Secret-Tunisian-Information-Agency ."
 cd
-fi
+}
 
 # ---------------------------------
-# Information Gathering
+# incorrect-selection
 # ---------------------------------
-if [ "$Menu" == "1" ]; then
-clear
-figlet "                         InG"
-echo ""
-echo -e " ${CYAN} Choose your tool: "
-echo ""
-echo    "   1* nmap"
-echo    "   2* Th3inspector      "
-echo    "   3* setoolkit"
-echo    "   4* sparta"
-echo    "   5* Sherlock"
-echo ""
-echo  -e  "   00* go back" ${LIGHTBLUE}
-echo ""
-echo ""
-read -p "InG@STIA~$ " Menu1
-  if [ "$Menu1" == "1" ];then
-   nmap
-  fi
-  if [ "$Menu1" == "2" ]; then
-   cd Th3inspector && chmod +x install.sh && ./install.sh && perl Th3inspector.pl
-  fi
-  if [ "$Menu1" == "3" ]; then
-   cd social-engineer-toolkit && python setup.py && setoolkit
-  fi
-  if [ "$Menu1" == "4" ]; then
-   sparta
-  fi
-  if [ "$Menu1" == "5" ]; then
-   cd sherlock &&  python3 -m pip install -r requirements.txt && python3 sherlock.py
-  fi
-fi
+incorrect_selection() {
+  echo "Incorrect selection! Try again."
+}
 
-# ----------------------------------------
-# Encryption & decryption
-# ----------------------------------------
-if [ "$Menu" == "2" ]; then
-clear
-figlet "ENC/DEC"
-echo -e " ${LIGHTPURPLE} Choose your tool: "
-echo ""
-echo    "   1* Crypto"
-echo ""
-echo  -e  "   00* go back" ${WHITE}
-echo ""
-echo ""
-read -p "ENC/DEC@STIA~$ " Menu2
- if [ "$Menu2" == "1" ]; then
- cd Crypto && cd Crypto_app && chmod +x install.sh && ./install.sh
- fi
-fi
+until [ "$Menu" = "00" ]; do
+  clear
+  echo -e "${LIGHTGREEN} ******************************************************************************"  
+  echo -e "${GREY} ******************************************************************************"  
+  echo -e "${YELLOW} ************************************* ${RED}STIA ${YELLOW}***********************************"
+  echo -e "${YELLOW} *******************${PURPLE} BE LIKE THE PARROT GET DIFFERENT COLOR ${YELLOW}*******************"
+  echo -e "${GREY} ******************************************************************************" 
+  echo -e "${BLUE} ******************************************************************************"  
+  echo ""
+  echo ""
+  echo  -e "                      ${LIGHTGREEN}author:${GREY} cybereagle2001        "
+  echo  -e "                   ${LIGHTGREEN}e-mail: ${GREY}cybereagle592@gmail.com  "
+  echo -e "                     ${LIGHTGREEN} project: ${GREY}STIA script          "
+  echo -e "                            ${RED}  V 0.00          ${NOCOLOR}      "
+  echo ""
+  echo ""
+  echo " Select from the menu: "
+  echo ""
+  echo "  [1] Information Gathering "
+  echo "  [2] encryption/decryption "
+  echo "  [3] Password Attacks      "
+  echo ""
+  echo -e "  [00] LOGOUT ${ORANGE}"
+  echo ""
+  echo ""
 
-# --------------------------------------
-# Password attack
-# --------------------------------------
-if [ "$Menu" == "3" ]; then
-clear
-figlet "                   pwd"
-echo -e "${RED} choose your tool: "
-echo ""
-echo    "   1* cupp"
-echo    "   2* Ncrack"
-echo    "   3* hydra"
-echo ""
-echo -e   "   00* go back" ${GREEN}
-echo ""
-read -p "pwd@STIA~$ " Menu3
- if [ "$Menu3" == "1" ];then
- cd cupp && python3 cupp.py -i
- fi 
- if [ "$Menu3" == "2" ];then
- cd ncrack && ncrack
- fi
- if [ "$Menu3" == "3" ]; then
- cd thc-hydra && ./configure && make && make install && ./hydra -h 
- fi
-fi
-
+  read -p "STIA~$ " Menu
+  case $Menu in
+    1 ) clear ; Information_Gathering ; press_enter ;; 
+    2 ) clear ; encryption_decryption ; press_enter ;;
+    3 ) clear ; Password_Attacks ; press_enter ;;
+    00 ) clear ; out ;;
+    * ) clear ; incorrect_selection ; press_enter ;;
+  esac
+done
