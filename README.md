@@ -1,7 +1,7 @@
 # STIA
 
   <a target="_blank" href="LICENSE" title="License: MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
-  <a target="_blank" href="Version" title="Version"><img src="https://img.shields.io/badge/version-0.00-GREEN"></a>
+  <a target="_blank" href="Version" title="Version"><img src="https://img.shields.io/badge/version-0.1-GREEN"></a>
   <a target="_blank" href="Language" title="Language"><img src="https://img.shields.io/badge/language-perl-RED"></a>
   <a target="_blank" href="Language" title="Language"><img src="https://img.shields.io/badge/language-python3-BLUE"></a>
   <a target="_blank" href="Language" title="Language"><img src="https://img.shields.io/badge/language-bash-GREEN"></a>
