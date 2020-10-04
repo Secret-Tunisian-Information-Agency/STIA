@@ -30,9 +30,11 @@ this script is wrote by cybereagle2001 in order to collect important hacking scr
 ## Encryption & decryption software:
 
 * Crypto
+* GPG
 
 ## Password attacks
 
 * cupp
-* thc-hydra
+* hydra
+* JohnTheRipper
 * Ncrack
