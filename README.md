@@ -25,7 +25,7 @@ this script is wrote by cybereagle2001 in order to collect important hacking scr
 * Th3inspector
 * setoolkit
 * Sherlock
-* Sparta
+* legion
 
 ## Encryption & decryption software:
 
