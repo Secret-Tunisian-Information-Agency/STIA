@@ -1,4 +1,4 @@
-#! bin
+#!
 #bash
 #coded by cybereagle2001 (oussama ben hadj dahman)
 
