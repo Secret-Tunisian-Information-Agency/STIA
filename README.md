@@ -24,13 +24,15 @@ this script is wrote by cybereagle2001 in order to collect important hacking scr
 * nmap
 * Th3inspector
 * setoolkit
-* Sherlock
 * legion
+* netdiscover
+* shodan-eye
 
 ## Encryption & decryption software:
 
 * Crypto
 * hash-identifier
+* GPG
 
 ## Password attacks
 
