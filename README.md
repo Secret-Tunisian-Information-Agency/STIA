@@ -30,6 +30,7 @@ this script is wrote by cybereagle2001 in order to collect important hacking scr
 ## Encryption & decryption software:
 
 * Crypto
+* hash-identifier
 
 ## Password attacks
 
