@@ -37,5 +37,6 @@ this script is wrote by cybereagle2001 in order to collect important hacking scr
 ## Password attacks
 
 * cupp
-* thc-hydra
+* hydra
+* JohnTheRipper
 * Ncrack
