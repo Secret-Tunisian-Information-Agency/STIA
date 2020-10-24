@@ -40,6 +40,10 @@ this script is wrote by cybereagle2001 in order to collect important hacking scr
 * hydra
 * JohnTheRipper
 * Ncrack
+# How To install STIA-toolkit
+
+
+
 # Liscence 
 [MIT](https://choosealicense.com/licenses/mit/) ©STIA.
 
