@@ -41,3 +41,6 @@ this script is wrote by cybereagle2001 in order to collect important hacking scr
 * JohnTheRipper
 * Ncrack
 # Liscence 
+[MIT](https://choosealicense.com/licenses/mit/) ©STIA.
+
+Original author : Oussama Ben Hadj Dahman (cybereagle2001)
