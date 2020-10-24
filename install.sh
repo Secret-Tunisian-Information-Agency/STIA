@@ -1,5 +1,6 @@
 #!
 # coded by cybereagle2001
+clear
 echo "(c) AllRightReservedto cybereagle2001(Oussama Ben Hadj Dahman)"
 echo "*******************************"
 echo  "       please wait"
