@@ -43,7 +43,9 @@ this script is wrote by cybereagle2001 in order to collect important hacking scr
 # How To install STIA-toolkit
 
 > git clone https://github.com/Secret-Tunisian-Information-Agency/STIA.git
+
 > cd STIA
+
 > chmod +x install.sh && ./install.sh
 
 
