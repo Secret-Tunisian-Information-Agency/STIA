@@ -40,3 +40,4 @@ this script is wrote by cybereagle2001 in order to collect important hacking scr
 * hydra
 * JohnTheRipper
 * Ncrack
+# Liscence 
