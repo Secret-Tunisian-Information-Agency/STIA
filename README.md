@@ -48,7 +48,7 @@ this script is wrote by cybereagle2001 in order to collect important hacking scr
 
 > cd STIA
 
-> chmod +x installer.sh && ./install.sh
+> chmod +x installer.sh && ./installer.sh
 
 
 # Liscence 
