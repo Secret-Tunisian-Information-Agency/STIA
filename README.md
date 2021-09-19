@@ -11,7 +11,8 @@
 this script is wrote by cybereagle2001 in order to collect important hacking scripts and tools in one place.
 # STIA SCRIPT options: 
 
-![menu](https://user-images.githubusercontent.com/63789665/95019066-e5f42600-0652-11eb-8705-bda2497d8e45.png)
+![STIa](https://user-images.githubusercontent.com/63789665/133932615-6afcc043-8e56-4d0a-8614-1429804b89a2.png)
+
 
 1- Information Gathering
 
