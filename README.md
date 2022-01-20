@@ -33,7 +33,7 @@ STIA script run on linux and windows. For the best compatibility you should run 
 
 * Crypto
 * hash-identifier
-* GPG
+* Passgen
 
 ## Password attacks
 
