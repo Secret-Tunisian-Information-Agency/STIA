@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 #coded by cybereagle2001(ben hadj dahman)
 #STIA toolkit is created in order to create a hacking toolkit that will allow hackers to use it on any system
 #STIA toolkit will make hacking easier
@@ -41,7 +42,7 @@ banner1= ("""
                        \033[1;92m author:\033[1;90m cybereagle2001
                     \033[1;92m e-mail: \033[1;90m cybereagle592@gmail.com  
                       \033[1;92m project: \033[1;90m STIA script          
-                             \033[1;31m  V 0.03 \033[0m
+                             \033[1;31m  V 0.04 \033[0m
 """)
 
 banner2= ("""
@@ -60,7 +61,7 @@ banner2= ("""
                        \033[1;92m author:\033[1;90m cybereagle2001
                     \033[1;92m e-mail: \033[1;90m cybereagle592@gmail.com
                       \033[1;92m project: \033[1;90m STIA script
-                             \033[1;31m  V 0.03 \033[0m
+                             \033[1;31m  V 0.04 \033[0m
 
 """)
 
@@ -80,7 +81,7 @@ banner3= ("""
                        \033[1;92m author:\033[1;90m cybereagle2001
                     \033[1;92m e-mail: \033[1;90m cybereagle592@gmail.com
                       \033[1;92m project: \033[1;90m STIA script
-                             \033[1;31m  V 0.03 \033[0m
+                             \033[1;31m  V 0.04 \033[0m
 
 """)
 
@@ -95,7 +96,7 @@ banner4= ("""
                                  \033[1;92m author:\033[1;90m cybereagle2001
                             \033[1;92m e-mail: \033[1;90m cybereagle592@gmail.com
                               \033[1;92m project: \033[1;90m STIA script
-                                        \033[1;31m  V 0.03\033[0m
+                                        \033[1;31m  V 0.04\033[0m
 
 """)
 
@@ -132,25 +133,42 @@ def password_attack():
    
           choose one option:
 
-        1* cupp
-        2* hydra
-        3* JohnTheRipper
-        4* Ncrack
+        1* cupp (wordlist generator)
+        2* hydra (brute force services)
+        3* JohnTheRipper (local password cracking)
+        4* Ncrack 
 
        00* go back
 
    """)
     Menu3= int(input('pwd@STIA~$ '))
     if (Menu3== 1):
-      os.system('cd /root/STIA/cupp && python3 cupp.py')
+        os.system('cd cupp && python3 cupp.py -i')
+
     elif (Menu3 == 2):
-      os.system('hydra')
+        ip = input("\033[0;32mthe ip target: \033[1;34m")
+        service = input("\033[0;32mthe service to attack (ftp/ssh...):\033[1;34m ")
+        user_name = input("\033[0;32musername or wordlist path:\033[1;34m ")
+        password = input("\033[0;32mpassword wordlist path: \033[1;34m")
+        print("\033[1;37m")
+        x = "hydra -l {0} -P {1} {2}://{3}".format(user_name,password,service,ip)
+        os.system(x)
+
     elif (Menu3 == 3):
-      os.system('sudo john')
+        password = input("\033[0;32mpassword file path to crack: \033[1;34m")
+        print("\033[0;32mchoose the right format : ")
+        os.system("john --list=formats")
+        formats = input("\033[0;32mwrite the format of the hash: \033[1;34m")
+        print("\033[1;37m")
+        x= "john --format={0} {1}".format(formats,password)
+        os.system(x)
+
     elif (Menu3 == 4):
       os.system("ncrack")
+
     elif (Menu3 == 00):
       main()
+    
     else:
        password_attack()
 
@@ -168,27 +186,32 @@ def encryption():
       Y88888P VP   V8P  `Y88P'        Y8888D' Y88888P  `Y88P'
     """)
     if (system == 1):
+        value = 1
         os.system("clear")
     else:
+        value = 0
         os.system("cls")
     
     print(banner1)
     print("""\033[0m
         Please choose an option: 
 
-          1* Crypto
-          2* hash-idenifier
-          3* Passgenn
+          1* Crypto (enc/dec)
+          2* hash-idenifier 
+          3* Passgenn (secure password generator)
 
          00* go back \033[0;35m
     """)
     Menu2= int(input("ENC/DEC@STIA~$ "))
     if (Menu2 == 1):
-        os.system("cd /crypto && chmod +x crypto.sh && ./crypto")
+        if (value == 1):
+            os.system("cd Crypto && cd Crypto_app && chmod +x install.sh")
+        else:
+            os.system("cd Crypto && cd Crypto_app && python3 cryptoV3_windows.py")
     elif(Menu2== 2):
         os.system('hash-identifier')
     elif (Menu2 == 3):
-        os.system('cd passgen && python3 passgenv2.py')
+        os.system('cd passgen && python3 passgenV3.py')
     elif (Menu2== 00):
         main()
     else:
@@ -225,11 +248,10 @@ def information_gathering():
      choose your tool:
 
       1* nmap
-      2* Th3inspector
-      3* setoolkit
-      4* legion
-      5* netdiscover
-      6* shodan-eye
+      2* setoolkit
+      3* legion
+      4* netdiscover
+      5* shodan-eye
 
       00* Go back\033[1;34m
     """)
@@ -237,15 +259,13 @@ def information_gathering():
     if (Menu1 == 1):
         os.system('nmap')
     elif (Menu1 == 2):
-              os.system('cd /STIA/Th3inspector && chmod +x install.sh && ./install.sh && perl Th3inspector.pl')
-    elif (Menu1 == 3):
         os.system('sudo setoolkit')
+    elif (Menu1 == 3):
+        os.system('sudo legion')
     elif (Menu1 == 4):
-        os.system('legion')
-    elif (Menu1 == 5):
         os.system('sudo netdiscover')
-    elif (Menu1 == 6):
-        os.system('cd /STIA/shodan-eye && python3 shodan_eye.py')
+    elif (Menu1 == 5):
+        os.system('cd shodan-eye && python3 shodan-eye.py')
     elif (Menu1 == 00):
         main()
     else:
