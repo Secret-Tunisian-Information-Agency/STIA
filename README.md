@@ -9,6 +9,7 @@
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/63789665/80873462-37fddd80-8ca8-11ea-9255-b12bff7167bb.gif)
 
 this script is wrote by cybereagle2001 in order to collect important hacking scripts and tools in one place.
+STIA script run on linux and windows. For the best compatibility you should run it on kali linux or parrot OS.
 # STIA SCRIPT options: 
 
 ![STIa](https://user-images.githubusercontent.com/63789665/133932615-6afcc043-8e56-4d0a-8614-1429804b89a2.png)
