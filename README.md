@@ -12,7 +12,8 @@ this script is wrote by cybereagle2001 in order to collect important hacking scr
 STIA script run on linux and windows. For the best compatibility you should run it on kali linux or parrot OS.
 # STIA SCRIPT options: 
 
-![STIa](https://user-images.githubusercontent.com/63789665/133932615-6afcc043-8e56-4d0a-8614-1429804b89a2.png)
+![STIA](https://user-images.githubusercontent.com/63789665/150368490-47e85cd0-4699-41c4-b922-950f48266732.png)
+
 
 
 1- Information Gathering
