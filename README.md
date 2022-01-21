@@ -6,10 +6,11 @@
   <a target="_blank" href="Language" title="Language"><img src="https://img.shields.io/badge/language-bash-GREEN"></a>
    <a target="_blank" href="LICENSE" title="License: MIT"><img src="https://img.shields.io/badge/OS-linux-red.svg"></a>
    
-![ezgif com-video-to-gif](https://user-images.githubusercontent.com/63789665/80873462-37fddd80-8ca8-11ea-9255-b12bff7167bb.gif)
+![White and Green Gaming Logo](https://user-images.githubusercontent.com/63789665/150534457-154853c7-00a2-4f03-88a5-acb05a52afbf.png)
 
-this script is wrote by cybereagle2001 in order to collect important hacking scripts and tools in one place.
-STIA script run on linux and windows. For the best compatibility you should run it on kali linux or parrot OS.
+
+From Now no need to remember all the commands to acheive your hacking goals. No need to remmeber all the flags and combinations for a successful brute forcing or password cracking tasks. All what you have to do is to choose the tool from STIA menu give the script the IP of the target the wordlist you want ot use and it will do the hard part. STIA script was just a simple coding exercises but now it's a whole Projects that I want to develope in order to create something that can turn any linux distro into a hacking beast.
+Now STIA script run on linux and windows. For the best compatibility you should run it on kali linux or parrot OS soon you will no longer need to use these distros 
 # STIA SCRIPT options: 
 
 ![STIA](https://user-images.githubusercontent.com/63789665/150527452-9a8f872e-9f7b-4ad0-9825-c163c80caf50.png)
