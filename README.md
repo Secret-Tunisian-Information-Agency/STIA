@@ -25,7 +25,7 @@ STIA script run on linux and windows. For the best compatibility you should run 
 
 ## Information Gathering tools:
 
-* nmap
+* TNSCANNER
 * setoolkit
 * legion
 * netdiscover
