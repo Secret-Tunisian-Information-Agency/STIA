@@ -186,10 +186,8 @@ def encryption():
       Y88888P VP   V8P  `Y88P'        Y8888D' Y88888P  `Y88P'
     """)
     if (system == 1):
-        value = 1
         os.system("clear")
     else:
-        value = 0
         os.system("cls")
     
     print(banner1)
@@ -204,14 +202,11 @@ def encryption():
     """)
     Menu2= int(input("ENC/DEC@STIA~$ "))
     if (Menu2 == 1):
-        if (value == 1):
-            os.system("cd Crypto && cd Crypto_app && chmod +x install.sh")
-        else:
-            os.system("cd Crypto && cd Crypto_app && python3 cryptoV3_windows.py")
+        os.system("python3 Crypto/Crypto_app/cryptoV3_linux.py")
     elif(Menu2== 2):
         os.system('hash-identifier')
     elif (Menu2 == 3):
-        os.system('cd passgen && python3 passgenV3.py')
+        os.system('python3 passgen/passgenV3.py')
     elif (Menu2== 00):
         main()
     else:
@@ -247,7 +242,7 @@ def information_gathering():
     print("""\033[0;36m
      choose your tool:
 
-      1* nmap
+      1* TNSCANNER
       2* setoolkit
       3* legion
       4* netdiscover
@@ -257,7 +252,7 @@ def information_gathering():
     """)
     Menu1= int(input("InG@STIA~$ "))
     if (Menu1 == 1):
-        os.system('nmap')
+        os.system('cd TNSCANNER && ./cybereagle2001.py')
     elif (Menu1 == 2):
         os.system('sudo setoolkit')
     elif (Menu1 == 3):
@@ -265,7 +260,7 @@ def information_gathering():
     elif (Menu1 == 4):
         os.system('sudo netdiscover')
     elif (Menu1 == 5):
-        os.system('cd shodan-eye && python3 shodan-eye.py')
+        os.system('python3 shodan-eye/shodan-eye.py')
     elif (Menu1 == 00):
         main()
     else:
@@ -297,6 +292,12 @@ def logout():
 
    \033[0mThanks for useing \033[1;31m STIA script \033[0m. If you got any prooblems please send us an e-mail on \033[0;32m cybereagle592@gmail.com \033[0m, or on github \033[1;33m https://github.com/Secret-Tunisian-Information-Agency ."
    """)
+# ---------------------------
+#      update function
+# ---------------------------
+def update():
+    os.system("./installer.sh")
+
 #---------------------------
 # main porgram
 #---------------------------
@@ -313,6 +314,7 @@ def main():
           [2] encryption/decryption
           [3] Password Attacks
 
+          [99] UPDATE
           [00] LOGOUT \033[0;33m""")
 
     Menu= int(input("STIA~$ "))
@@ -321,6 +323,7 @@ def main():
         1 : information_gathering,
         2 : encryption,
         3 : password_attack,
+        99: update,
         00 : logout
     }
     switcher.get(Menu,'Invalid algorithm')()
